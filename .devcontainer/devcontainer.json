@@ -4,6 +4,11 @@
   "service": "dev",
   "workspaceFolder": "/home/ivorysql/IvorySQL",
   "remoteUser": "ivorysql",
+  "features": {
+    "ghcr.io/devcontainers/features/sshd:1": {
+      "version": "latest"
+    }
+  },
   "customizations": {
     "vscode": {
       "settings": {

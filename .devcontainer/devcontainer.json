@@ -1,26 +1,11 @@
 {
   "name": "IvorySQL Dev",
-  "dockerComposeFile": "../docker-compose.yaml",
-  "service": "dev",
-  "workspaceFolder": "/home/ivorysql/IvorySQL",
-  "remoteUser": "ivorysql",
-  "features": {
-    "ghcr.io/devcontainers/features/sshd:1": {
-      "version": "latest"
-    }
-  },
+  "image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+  "remoteUser": "codespace",
   "customizations": {
     "vscode": {
-      "settings": {
-        "terminal.integrated.defaultProfile.linux": "bash",
-        "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools"
-      },
       "extensions": [
-        "ms-vscode.cpptools",
-        "ms-vscode.makefile-tools",
-        "twxs.cmake",
-        "mhutchie.git-graph",
-        "eamodio.gitlens"
+        "ms-vscode.cpptools"
       ]
     }
   }
